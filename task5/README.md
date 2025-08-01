@@ -162,23 +162,3 @@ docker-compose up -d --build
 docker-compose down
 ```
 
-## Project Structure
-
-```
-dataforge-synthetic-data-generator/
-├── api/
-│   └── main.py              # FastAPI backend server
-├── src/
-│   ├── App.tsx             # Main React component
-│   ├── main.tsx            # React entry point
-│   ├── index.css           # Global styles and animations
-│   └── vite-env.d.ts       # Vite type definitions
-├── public/
-│   └── vite.svg            # Vite logo
-├── package.json            # Node.js dependencies and scripts
-├── tsconfig.json           # TypeScript configuration
-├── tailwind.config.js      # Tailwind CSS configuration
-├── vite.config.ts          # Vite configuration
-├── requirements.txt        # Frontend requirements documentation
-└── README.md              # This file
-```
