@@ -24,7 +24,6 @@ def extract_frames(video_path, interval_sec=3, output_dir="frames"):
     cap.release()
     return [os.path.join(output_dir, f) for f in sorted(os.listdir(output_dir))]
 
-# 2. CLIP benzerlik skoru
 def clip_similarity(img_paths, text="A high-quality product image"):
     device = "cuda" if torch.cuda.is_available() else "cpu"
     clip_model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32").to(device)
