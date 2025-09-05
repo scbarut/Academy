@@ -1,6 +1,5 @@
 import modal
 from pydantic import BaseModel
-from fastapi import FastAPI
 
 app = modal.App("qwen25_pipeline_demo")
 
